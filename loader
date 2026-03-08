@@ -1,0 +1,10 @@
+local id = game.PlaceId
+local repoUrl = "https://raw.githubusercontent.com/farrelghibran/DarksoulHub/refs/heads/main/"
+
+if id == 2753915549 or id == 4442272183 or id == 7449423635 or id == 73902483975735 or id == 85211729168715 or id == 79091703265657 or id == 100117331123089 then
+    loadstring(game:HttpGet(repoUrl .. "/BloxFruits.lua"))()
+elseif id == 3623096087 then
+    loadstring(game:HttpGet(repoUrl .. "/MuscleLegends.lua"))()
+else
+    game.Players.LocalPlayer:Kick("This game is not supported.\nPlease join our Discord server for more information.")
+end
